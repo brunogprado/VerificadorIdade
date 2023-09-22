@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="h1">Verificador de idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de nascimento:
+                <input type="number" name="txtano" id="txtano" placeholder="Digite o ano de nascimento" min="0">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="sex" id="masc"> <!-- name igual para não permitir o check nas duas radios -->
+                <label for="masc">Masculino</label>
+                <input type="radio" name="sex" id="fem"><!-- name igual para não permitir o check nas duas radios -->
+                <label for="fem">Feminino</label>
+            </p>
+            <button id="btn" onclick="verificar()">Verificar</button>
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
+        </div>
+    </section>
+    <footer id="footer">
+        Feito por Bruno Prado
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
